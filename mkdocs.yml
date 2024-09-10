@@ -25,7 +25,7 @@ theme:
 # Extensions
 markdown_extensions:
   - footnotes
-  - attr_list
+  # - attr_list
   - pymdownx.arithmatex:
       generic: true
   # - pymdownx.superfences
@@ -51,7 +51,7 @@ markdown_extensions:
 plugins:
   - search
   - roamlinks
-#  - blog
+  - blog
   - rss:
       match_path: blog/posts/.*
       date_from_meta:
@@ -64,4 +64,5 @@ extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  - https://unpkg.com/mermaid/dist/mermaid.min.js 
+  - https://unpkg.com/mermaid/dist/mermaid.min.js
+  -
