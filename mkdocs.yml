@@ -1,4 +1,4 @@
-site_name: obsidian-mkdocs template
+site_name: MDs
 
 theme:
     name: 'material'
@@ -25,7 +25,7 @@ theme:
 # Extensions
 markdown_extensions:
   - footnotes
-  # - attr_list
+  - attr_list
   - pymdownx.arithmatex:
       generic: true
   # - pymdownx.superfences
@@ -51,14 +51,6 @@ markdown_extensions:
 plugins:
   - search
   - roamlinks
-  # - blog
-  - rss:
-      match_path: blog/posts/.* 
-      date_from_meta:
-        as_creation: date
-      categories:
-        - categories
-        - tags
 
 extra_javascript:
   # - javascripts/mathjax.js
