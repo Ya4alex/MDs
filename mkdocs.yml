@@ -52,6 +52,10 @@ markdown_extensions:
 plugins:
   - search
   - roamlinks
+#  - obsidian:
+#      enable_wikilinks: true  # Включает поддержку [[...]] ссылок
+#      use_relative_paths: true  # Использует относительные пути для ссылок
+#      wikilink_file_extension: .md  # Указывает, что ссылки должны оканчиваться на .md
 #  - blog
 #  - rss:
 #      match_path: blog/posts/.*
