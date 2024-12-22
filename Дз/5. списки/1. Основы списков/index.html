@@ -1,0 +1,2242 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../4.%20%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8/%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8/2/">
+      
+      
+        <link rel="next" href="../2.%20%D0%9F%D0%BE%D0%BB%D0%BD%D1%8B%D0%B9%20%D0%BD%D0%B0%D0%B1%D0%BE%D1%80%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B9%20%D0%B8%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%BE%D0%B2%20%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%B0/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>1. Основы списков - MDs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+    
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    
+        ym(98947943, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/98947943" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="#62466f" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="MDs" class="md-header__button md-logo" aria-label="MDs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MDs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              1. Основы списков
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="#62466f" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="#62466f" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="MDs" class="md-nav__button md-logo" aria-label="MDs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    MDs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Info
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Info
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../info/%D0%9F%D0%B5%D1%80%D0%B5%D1%85%D0%BE%D0%B4%20%D0%BD%D0%B0%20Gihub%20%D0%B8%20VsCode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Переход на Gihub и VsCode
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Дз
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Дз
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    3. циклы
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            3. циклы
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_1" id="__nav_3_1_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    1. while
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            1. while
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3.%20%D1%86%D0%B8%D0%BA%D0%BB%D1%8B/1.%20while/While%201/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    While 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3.%20%D1%86%D0%B8%D0%BA%D0%BB%D1%8B/1.%20while/While%202/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    While 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3.%20%D1%86%D0%B8%D0%BA%D0%BB%D1%8B/1.%20while/While%203/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    While 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3.%20%D1%86%D0%B8%D0%BA%D0%BB%D1%8B/1.%20while/While%204/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    While 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_2" id="__nav_3_1_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    2. for
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            2. for
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3.%20%D1%86%D0%B8%D0%BA%D0%BB%D1%8B/2.%20for/1.%20%D0%A2%D0%B5%D0%BE%D1%80%D0%B8%D1%8F%20%D0%B8%20%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1. Теория и Практика
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3.%20%D1%86%D0%B8%D0%BA%D0%BB%D1%8B/2.%20for/2.%20%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%BA%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Задачки
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    4. строки
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            4. строки
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4.%20%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8/1.%20%D0%92%D0%B7%D1%8F%D1%82%D0%B8%D0%B5%20%D0%BF%D0%BE%20%D0%B8%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D1%83%20%D0%B8%20len/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1. Взятие по индексу и len
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4.%20%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8/2.%20%D0%91%D0%B0%D0%B7%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B%20%D1%81%D1%82%D1%80%D0%BE%D0%BA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Базовые методы строк
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4.%20%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8/3.%20%D0%A1%D1%80%D0%B5%D0%B7%D1%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Срезы строк
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4.%20%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8/4.%20%D0%A0%D0%B0%D1%81%D1%88%D0%B8%D1%80%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B%20%D1%81%D1%82%D1%80%D0%BE%D0%BA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. Расширенные методы строк
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_5" id="__nav_3_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Задачи
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Задачи
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4.%20%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8/%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8/1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Задачи 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4.%20%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8/%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8/2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Задачи 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    5. списки
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            5. списки
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    1. Основы списков
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    1. Основы списков
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Теория: Базовые методы и работа со списками
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Теория: Базовые методы и работа со списками">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Доступ к элементам
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#append" class="md-nav__link">
+    <span class="md-ellipsis">
+      append
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pop" class="md-nav__link">
+    <span class="md-ellipsis">
+      pop
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Задачи потренироваться:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Задачи потренироваться:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Простая задача
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Еще простая задача
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. И еще простая задача
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Теория: Арифметика списков:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Теория: Другие методы работы со списками
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Теория: Другие методы работы со списками">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#insert" class="md-nav__link">
+    <span class="md-ellipsis">
+      insert
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove" class="md-nav__link">
+    <span class="md-ellipsis">
+      remove
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      sort
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reverse" class="md-nav__link">
+    <span class="md-ellipsis">
+      reverse
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#count" class="md-nav__link">
+    <span class="md-ellipsis">
+      count
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#index" class="md-nav__link">
+    <span class="md-ellipsis">
+      index
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Задачи потренироваться:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Задачи потренироваться:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Задача на вставку
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Задача на удаление
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Задача на сортировку
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Задача на переворот
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Задача на поиск
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Задача на индекс
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Основные задачи:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Основные задачи:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Задача на фильтрацию данных
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Задача на обработку числовых данных
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Управление списком задач
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Задача на обработку строк в списке
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Дополнительные задачи:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Дополнительные задачи:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Задача на анализ текста
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Задача на создание отчета по продажам
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.%20%D0%9F%D0%BE%D0%BB%D0%BD%D1%8B%D0%B9%20%D0%BD%D0%B0%D0%B1%D0%BE%D1%80%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B9%20%D0%B8%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%BE%D0%B2%20%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Полный набор функций и методов списка
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.%20%D0%9C%D0%B0%D1%82%D1%80%D0%B8%D1%86%D1%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Матрицы
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_4" id="__nav_3_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Задачи
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Задачи
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8/1./" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1. Задачи
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    6. функции
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            6. функции
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6.%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8/1.%20%D0%A4%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8%20%D0%B8%20%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1. Функции и списки
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6.%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8/2.%20%D0%A4%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Функции
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    7. словари
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            7. словари
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../7.%20%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8/1.%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B5%D0%B9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1. Основы словарей
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5_2" id="__nav_3_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Задачи
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Задачи
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../7.%20%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8/%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8/1%20%D0%BF%D0%BE%D0%B2%D1%82%D0%BE%D1%80%D0%B5%D0%BD%D0%B8%D0%B5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1 повторение
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Теория: Базовые методы и работа со списками
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Теория: Базовые методы и работа со списками">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Доступ к элементам
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#append" class="md-nav__link">
+    <span class="md-ellipsis">
+      append
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pop" class="md-nav__link">
+    <span class="md-ellipsis">
+      pop
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Задачи потренироваться:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Задачи потренироваться:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Простая задача
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Еще простая задача
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. И еще простая задача
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Теория: Арифметика списков:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Теория: Другие методы работы со списками
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Теория: Другие методы работы со списками">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#insert" class="md-nav__link">
+    <span class="md-ellipsis">
+      insert
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove" class="md-nav__link">
+    <span class="md-ellipsis">
+      remove
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      sort
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reverse" class="md-nav__link">
+    <span class="md-ellipsis">
+      reverse
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#count" class="md-nav__link">
+    <span class="md-ellipsis">
+      count
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#index" class="md-nav__link">
+    <span class="md-ellipsis">
+      index
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Задачи потренироваться:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Задачи потренироваться:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Задача на вставку
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Задача на удаление
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Задача на сортировку
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Задача на переворот
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Задача на поиск
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Задача на индекс
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Основные задачи:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Основные задачи:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Задача на фильтрацию данных
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Задача на обработку числовых данных
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Управление списком задач
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Задача на обработку строк в списке
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Дополнительные задачи:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Дополнительные задачи:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Задача на анализ текста
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Задача на создание отчета по продажам
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="1">1. Основы списков<a class="headerlink" href="#1" title="Permanent link">&para;</a></h1>
+<h2 id="_1">Теория: Базовые методы и работа со списками<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="_2">Доступ к элементам<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>Чтобы получить элемент из списка, нужно указать его индекс в квадратных скобках. Например, если у нас есть список:</p>
+<div class="highlight"><pre><span></span><code><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;яблоко&quot;</span><span class="p">,</span> <span class="s2">&quot;банан&quot;</span><span class="p">,</span> <span class="s2">&quot;вишня&quot;</span><span class="p">]</span>
+</code></pre></div>
+<ul>
+<li><code>fruits[0]</code> вернет первый элемент — <code>"яблоко"</code>.</li>
+<li><code>fruits[2]</code> вернет третий элемент — <code>"вишня"</code>.</li>
+<li>Если указать отрицательный индекс, например, <code>fruits[-1]</code>, то это будет доступ к последнему элементу списка.</li>
+</ul>
+<h3 id="append">append<a class="headerlink" href="#append" title="Permanent link">&para;</a></h3>
+<p>Чтобы добавить элемент в конец списка, используют метод <code>append()</code>. Например:</p>
+<div class="highlight"><pre><span></span><code><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">numbers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="c1"># Теперь список будет таким: [1, 2, 3, 4]</span>
+</code></pre></div>
+<h3 id="pop">pop<a class="headerlink" href="#pop" title="Permanent link">&para;</a></h3>
+<p>Удалить элемент из списка можно с помощью метода <code>pop()</code>, который удаляет элемент по его индексу и возвращает его. Если индекс не указан, удалится последний элемент. Например:</p>
+<div class="highlight"><pre><span></span><code><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="n">numbers</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>  <span class="c1"># Удаляется 4</span>
+<span class="n">numbers</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># Удаляется элемент с индексом 1, то есть 2</span>
+<span class="c1"># Теперь список: [1, 3]</span>
+</code></pre></div>
+<hr />
+<h2 id="_3">Задачи потренироваться:<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="1_1">1. Простая задача<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h3>
+<p>Создайте список с тремя вашими любимыми цветами и выведите второй цвет.</p>
+<h3 id="2">2. Еще простая задача<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<p>Добавьте в список цветов новый элемент и выведите обновленный список.</p>
+<h3 id="3">3. И еще простая задача<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<p>Удалите последний элемент из списка цветов и выведите результат.</p>
+<hr />
+<h2 id="_4">Теория: Арифметика списков:<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<table><tbody><tr><td><p>Операция</p></td><td><p>Описание</p></td><td><p>Пример</p></td><td><p>Результат</p></td></tr><tr><td><p>x in s</p></td><td><p>Возвращает True, если в списке s есть элемент x. Иначе False</p></td><td><p>1 in [1, 2, 3]</p></td><td><p>True</p></td></tr><tr><td><p>x not in s</p></td><td><p>Возвращает False, если в списке s есть элемент x. Иначе True</p></td><td><p>4 not in [1, 2, 3]</p></td><td><p>True</p></td></tr><tr><td><p>s + t</p></td><td><p>Возвращает список, полученный конкатенацией списков s и t</p></td><td><p>[1, 2] + [3, 4, 5]</p></td><td><p>[1, 2, 3, 4, 5]</p></td></tr><tr><td><p>s * n (n * s)</p></td><td><p>Возвращает список, полученный дублированием n раз списка s</p></td><td><p>[1, 2, 3] * 3</p></td><td><p>[1, 2, 3, 1, 2, 3, 1, 2, 3]</p></td></tr><tr><td><p>len(s)</p></td><td><p>Возвращает длину списка s</p></td><td><p>len([1, 2, 3])</p></td><td><p>3</p></td></tr></tbody></table>
+
+<hr />
+<h2 id="_5">Теория: Другие методы работы со списками<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h3 id="insert">insert<a class="headerlink" href="#insert" title="Permanent link">&para;</a></h3>
+<p>Метод <code>insert()</code> вставляет элемент на указанное место в списке. Формат: <code>list.insert(index, element)</code>. Например:</p>
+<div class="highlight"><pre><span></span><code><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;яблоко&quot;</span><span class="p">,</span> <span class="s2">&quot;банан&quot;</span><span class="p">,</span> <span class="s2">&quot;вишня&quot;</span><span class="p">]</span>
+<span class="n">fruits</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;апельсин&quot;</span><span class="p">)</span>
+<span class="c1"># Теперь список: [&#39;яблоко&#39;, &#39;апельсин&#39;, &#39;банан&#39;, &#39;вишня&#39;]</span>
+</code></pre></div>
+<h3 id="remove">remove<a class="headerlink" href="#remove" title="Permanent link">&para;</a></h3>
+<p>Метод <code>remove()</code> удаляет первое вхождение указанного элемента (Удаление по значению, а не по индексу):</p>
+<div class="highlight"><pre><span></span><code><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;яблоко&quot;</span><span class="p">,</span> <span class="s2">&quot;банан&quot;</span><span class="p">,</span> <span class="s2">&quot;вишня&quot;</span><span class="p">,</span> <span class="s2">&quot;банан&quot;</span><span class="p">]</span>
+<span class="n">fruits</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">&quot;банан&quot;</span><span class="p">)</span>
+<span class="c1"># Теперь список: [&#39;яблоко&#39;, &#39;вишня&#39;, &#39;банан&#39;] (удален первый &quot;банан&quot;)</span>
+</code></pre></div>
+<h3 id="sort">sort<a class="headerlink" href="#sort" title="Permanent link">&para;</a></h3>
+<p>Метод <code>sort()</code> сортирует список по возрастанию (если это числа или строки).
+<div class="highlight"><pre><span></span><code><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="n">numbers</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>  <span class="c1"># Сортировка: [1, 3, 5, 8]</span>
+<span class="n">numbers</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  <span class="c1"># Обратный порядко: [8, 5, 3, 1]</span>
+</code></pre></div></p>
+<h3 id="reverse">reverse<a class="headerlink" href="#reverse" title="Permanent link">&para;</a></h3>
+<p>Метод <code>reverse()</code> переворачивает порядок элементов в списке.</p>
+<div class="highlight"><pre><span></span><code><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+<span class="n">numbers</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>  <span class="c1"># Переворот: [8, 5, 3, 1]</span>
+</code></pre></div>
+<h3 id="count">count<a class="headerlink" href="#count" title="Permanent link">&para;</a></h3>
+<p>Метод <code>count()</code> возвращает, сколько раз элемент встречается в списке:</p>
+<div class="highlight"><pre><span></span><code><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>  <span class="c1"># Выведет 3, так как число 2 встречается 3 раза</span>
+</code></pre></div>
+<h3 id="index">index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h3>
+<p>Метод <code>index()</code> возвращает индекс первого вхождения элемента:</p>
+<p><div class="highlight"><pre><span></span><code><span class="n">letters</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">letters</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">))</span>  <span class="c1"># Вернет 1 (первое вхождение &#39;b&#39;)</span>
+</code></pre></div>
+В отличии от find в строках, вернет ошибку <code>ValueError</code>, если ничего не найдётся.</p>
+<hr />
+<h2 id="_6">Задачи потренироваться:<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="1_2">1. Задача на вставку<a class="headerlink" href="#1_2" title="Permanent link">&para;</a></h3>
+<p>Запросите у пользователя список чисел и вставьте число <code>11</code> за минимальным элементом списка. Функцию <code>min</code> использовать нельзя.</p>
+<h3 id="2_1">2. Задача на удаление<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h3>
+<p>Запросите у пользователя список и удалите чётные элементы через 1.
+<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+</code></pre></div></p>
+<h3 id="3_1">3. Задача на сортировку<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h3>
+<p>Дан список из чисел: <code>[8, 3, 5, 1, 9]</code>. Отсортируйте его первую половину по возрастанию, вторую по убыванию, используя методы списков и выведите результат.</p>
+<blockquote>
+<p>Возможно будет удобным разделить список на 2 списка, отсортировать половины и соединить обратно.</p>
+</blockquote>
+<h3 id="4">4. Задача на переворот<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
+<p>Дан список-очередь из имен: <code>["Анна", "Борис", "Влад", "Галя"]</code>. Переверните вторую половину очереди и выведите имена по одному, одновременно удаляя их из очереди.</p>
+<h3 id="5">5. Задача на поиск<a class="headerlink" href="#5" title="Permanent link">&para;</a></h3>
+<p>Дан список с повторяющимися числами: <code>[1, 3, 1, 4, 1, 5]</code>. Найдите, сколько раз в списке встречается самое частое число  встречается в списке.
+    <details>
+    <summary>Подсказка</summary>
+    <p>Можно сначала найти самое частое, а потом подсчитать его количество</p>
+    </details></p>
+<h3 id="6">6. Задача на индекс<a class="headerlink" href="#6" title="Permanent link">&para;</a></h3>
+<p>Дан список с буквами: <code>['x', 'y', 'z', 'x', 'y', 'r', 't']</code>. Найдите индекс первого вхождения буквы <code>'y'</code> и сформируйте список из исходного, начиная со следующей буквы после первой <code>'y'</code>.</p>
+<hr />
+<h2 id="_7">Основные задачи:<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="1_3">1. Задача на фильтрацию данных<a class="headerlink" href="#1_3" title="Permanent link">&para;</a></h3>
+<p><strong>Описание:</strong><br />
+Пользователь вводит список заказов с указанием суммы покупки:</p>
+<div class="highlight"><pre><span></span><code><span class="n">orders</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2500</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">1200</span><span class="p">,</span> <span class="mi">3000</span><span class="p">,</span> <span class="mi">700</span><span class="p">]</span>
+</code></pre></div>
+<p><strong>Задача:</strong><br />
+1. Удалите все заказы с суммой меньше 100.
+2. Найдите заказ с наибольшей суммой.
+3. Выведите сумму всех оставшихся заказов и среднюю сумму заказа.
+4. Найдите заказ, сумма которого была ближайшей к среднему.
+    <details>
+    <summary>Подсказка</summary>
+    <p>Похоже на алгоритм поиска минимума, только нужно искать минимальную разницу между заказом и средним заказом.</p>
+    <p>Функция <code>abs()</code> немного упростит код:</p>
+    <pre><code class="language-python">
+a = abs(-4)  # a == 4
+b = abs(5)   # b == 5
+    </code></pre>
+    </details></p>
+<h3 id="2_2">2. Задача на обработку числовых данных<a class="headerlink" href="#2_2" title="Permanent link">&para;</a></h3>
+<p><strong>Описание:</strong><br />
+У вас есть список температур за неделю в градусах Цельсия:</p>
+<div class="highlight"><pre><span></span><code><span class="n">temperatures</span> <span class="o">=</span> <span class="p">[</span><span class="mi">15</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">24</span><span class="p">]</span>
+</code></pre></div>
+<p><strong>Задача:</strong><br />
+1. Найдите среднюю температуру за неделю.
+2. Определите количество дней, когда температура была выше средней.
+3. Преобразуйте список температур в Фаренгейты и выведите результат (формула: <code>T(°F) = T(°C) * 9/5 + 32</code>).</p>
+<h3 id="3_2">3. Управление списком задач<a class="headerlink" href="#3_2" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Задача достаточно объёмная, но не сильно сложная. Лучше отложить под конец.</p>
+</blockquote>
+<p><strong>Описание:</strong><br />
+Вы разрабатываете приложение для управления списком дел. У вас есть список задач, где каждая задача представлена строкой:
+<em>пример:</em>
+<div class="highlight"><pre><span></span><code><span class="n">tasks</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Купить продукты&quot;</span><span class="p">,</span> <span class="s2">&quot;Сделать домашнюю работу&quot;</span><span class="p">,</span> <span class="s2">&quot;Позвонить врачу&quot;</span><span class="p">,</span> <span class="s2">&quot;Погулять с собакой&quot;</span><span class="p">]</span>
+</code></pre></div></p>
+<p><strong>Задача:</strong><br />
+Реализуйте управление списком задач. Можно реализовать интерфейс с выбором пунктов меню. Например так:
+<div class="highlight"><pre><span></span><code><span class="mi">1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">Добавить</span><span class="w"> </span><span class="n">задачу</span>
+<span class="mi">2</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">Удалить</span><span class="w"> </span><span class="n">задачу</span>
+<span class="mi">3</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">Выполнить</span><span class="w"> </span><span class="n">задачу</span>
+<span class="mi">4</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">Вывести</span><span class="w"> </span><span class="n">список</span><span class="w"> </span><span class="n">оставшихся</span><span class="w"> </span><span class="n">задач</span>
+<span class="mi">5</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">Вывести</span><span class="w"> </span><span class="n">список</span><span class="w"> </span><span class="n">выполненных</span><span class="w"> </span><span class="n">задач</span>
+<span class="mi">0</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">Выйти</span><span class="w"> </span><span class="n">из</span><span class="w"> </span><span class="n">программы</span>
+
+<span class="o">~</span><span class="n">Введите</span><span class="w"> </span><span class="n">пункт</span><span class="w"> </span><span class="n">меню</span><span class="o">:</span>
+<span class="o">&gt;</span><span class="w"> </span><span class="mi">1</span>
+<span class="n">Введите</span><span class="w"> </span><span class="n">название</span><span class="w"> </span><span class="n">задачи</span><span class="o">:</span>
+<span class="o">&gt;</span><span class="w"> </span><span class="n">Почистить</span><span class="w"> </span><span class="n">кортошку</span>
+<span class="n">Задача</span><span class="w"> </span><span class="n">добавлена</span><span class="o">!</span>
+
+<span class="o">~</span><span class="n">Введите</span><span class="w"> </span><span class="n">пункт</span><span class="w"> </span><span class="n">меню</span><span class="o">:</span>
+<span class="o">&gt;</span><span class="w"> </span><span class="mi">1</span>
+<span class="n">Введите</span><span class="w"> </span><span class="n">название</span><span class="w"> </span><span class="n">задачи</span><span class="o">:</span>
+<span class="o">&gt;</span><span class="w"> </span><span class="n">Убраться</span><span class="w"> </span><span class="n">в</span><span class="w"> </span><span class="n">комнате</span>
+<span class="n">Задача</span><span class="w"> </span><span class="n">добавлена</span><span class="o">!</span>
+
+<span class="o">~</span><span class="n">Введите</span><span class="w"> </span><span class="n">пункт</span><span class="w"> </span><span class="n">меню</span><span class="o">:</span>
+<span class="o">&gt;</span><span class="w"> </span><span class="mi">4</span>
+<span class="mf">1.</span><span class="w"> </span><span class="n">Почистить</span><span class="w"> </span><span class="n">кортошку</span>
+<span class="mf">2.</span><span class="w"> </span><span class="n">Убраться</span><span class="w"> </span><span class="n">в</span><span class="w"> </span><span class="n">комнате</span>
+
+<span class="o">~</span><span class="n">Введите</span><span class="w"> </span><span class="n">пункт</span><span class="w"> </span><span class="n">меню</span><span class="o">:</span>
+<span class="o">&gt;</span><span class="w"> </span><span class="mi">3</span>
+<span class="mf">1.</span><span class="w"> </span><span class="n">Почистить</span><span class="w"> </span><span class="n">кортошку</span>
+<span class="mf">2.</span><span class="w"> </span><span class="n">Убраться</span><span class="w"> </span><span class="n">в</span><span class="w"> </span><span class="n">комнате</span>
+<span class="n">Выберите</span><span class="w"> </span><span class="n">номер</span><span class="w"> </span><span class="n">задачи</span><span class="o">:</span>
+<span class="o">&gt;</span><span class="w"> </span><span class="mi">1</span>
+<span class="n">Задача</span><span class="w"> </span><span class="s">&quot;Почистить кортошку&quot;</span><span class="w"> </span><span class="n">выполнена</span><span class="o">!</span>
+
+<span class="o">~</span><span class="n">Введите</span><span class="w"> </span><span class="n">пункт</span><span class="w"> </span><span class="n">меню</span><span class="o">:</span>
+<span class="o">&gt;</span><span class="w"> </span><span class="mi">4</span>
+<span class="mf">1.</span><span class="w"> </span><span class="n">Убраться</span><span class="w"> </span><span class="n">в</span><span class="w"> </span><span class="n">комнате</span>
+
+<span class="o">~</span><span class="n">Введите</span><span class="w"> </span><span class="n">пункт</span><span class="w"> </span><span class="n">меню</span><span class="o">:</span>
+<span class="o">&gt;</span><span class="w"> </span><span class="mi">5</span>
+<span class="mf">1.</span><span class="w"> </span><span class="n">Почистить</span><span class="w"> </span><span class="n">кортошку</span>
+
+<span class="o">~</span><span class="n">Введите</span><span class="w"> </span><span class="n">пункт</span><span class="w"> </span><span class="n">меню</span><span class="o">:</span>
+<span class="o">&gt;</span><span class="w"> </span><span class="mi">2</span>
+<span class="mf">1.</span><span class="w"> </span><span class="n">Убраться</span><span class="w"> </span><span class="n">в</span><span class="w"> </span><span class="n">комнате</span>
+<span class="n">Выберите</span><span class="w"> </span><span class="n">номер</span><span class="w"> </span><span class="n">задачи</span><span class="w"> </span><span class="n">для</span><span class="w"> </span><span class="n">удаления</span>
+<span class="o">&gt;</span><span class="w"> </span><span class="mi">1</span>
+<span class="n">Задача</span><span class="w"> </span><span class="n">удалена</span><span class="o">!</span>
+
+<span class="o">~</span><span class="n">Введите</span><span class="w"> </span><span class="n">пункт</span><span class="w"> </span><span class="n">меню</span><span class="o">:</span>
+<span class="o">&gt;</span><span class="w"> </span><span class="mi">4</span>
+<span class="n">Список</span><span class="w"> </span><span class="n">задач</span><span class="w"> </span><span class="n">пуст</span><span class="o">!</span>
+
+<span class="o">~</span><span class="n">Введите</span><span class="w"> </span><span class="n">пункт</span><span class="w"> </span><span class="n">меню</span><span class="o">:</span>
+<span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span>
+<span class="n">Пока</span>
+</code></pre></div></p>
+<h3 id="4_1">4. Задача на обработку строк в списке<a class="headerlink" href="#4_1" title="Permanent link">&para;</a></h3>
+<p><strong>Описание:</strong><br />
+У вас есть список строк, представляющих продукты с указанием цены и категории, разделённые запятой:</p>
+<p><div class="highlight"><pre><span></span><code><span class="n">products</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;яблоко,50,фрукты&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;банан,30,фрукты&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;огурец,20,овощи&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;помидор,25,овощи&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;апельсин,70,фрукты&quot;</span>
+<span class="p">]</span>
+<span class="n">products2</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">[</span><span class="s2">&quot;яблоко&quot;</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="s2">&quot;фрукты&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;банан&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="s2">&quot;фрукты&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;огурец&quot;</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="s2">&quot;овощи&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;помидор&quot;</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="s2">&quot;овощи&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;апельсин&quot;</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="s2">&quot;фрукты&quot;</span><span class="p">]</span>
+<span class="p">]</span>
+</code></pre></div>
+<strong>Задача:</strong>  </p>
+<ol>
+<li>Преобразуйте каждую строку в отдельные элементы списка (название, цена, категория).</li>
+<li>Выведите все фрукты из списка.</li>
+<li>Найдите самый дорогой продукт в категории "овощи".</li>
+</ol>
+<blockquote>
+<p>Элементом списка может быть любой объект, в том числе и другой список. Индексация может происходить так: <code>products2[0][1]</code> - цена первого продукта.
+Чтобы разделить строку по запятым в список, можно использовать метод строки <code>split</code> <a href="../../4.%20%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8/4.%20%D0%A0%D0%B0%D1%81%D1%88%D0%B8%D1%80%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B%20%D1%81%D1%82%D1%80%D0%BE%D0%BA/">4. Расширенные методы строк</a>.  </p>
+</blockquote>
+<hr />
+<h2 id="_8">Дополнительные задачи:<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<h3 id="5_1">5. Задача на анализ текста<a class="headerlink" href="#5_1" title="Permanent link">&para;</a></h3>
+<p><strong>Описание:</strong><br />
+У вас есть строка с текстом:</p>
+<div class="highlight"><pre><span></span><code><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Привет мир мир привет Python Python Python&quot;</span>
+</code></pre></div>
+<p><strong>Задача:</strong>  </p>
+<ol>
+<li>Преобразуйте строку в список слов (нельзя использовать <code>split</code>).</li>
+<li>Подсчитайте, сколько раз каждое слово встречается в тексте.</li>
+<li>Выведите список уникальных слов и их частоту появления.</li>
+</ol>
+<h3 id="6_1">6. Задача на создание отчета по продажам<a class="headerlink" href="#6_1" title="Permanent link">&para;</a></h3>
+<p><strong>Описание:</strong><br />
+У вас есть список продаж, где каждая продажа представлена названием товара и количеством проданных единиц:</p>
+<div class="highlight"><pre><span></span><code><span class="n">sales</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">[</span><span class="s2">&quot;яблоко&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;банан&quot;</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;огурец&quot;</span><span class="p">,</span> <span class="mi">20</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;помидор&quot;</span><span class="p">,</span> <span class="mi">15</span><span class="p">]</span>
+<span class="p">]</span>
+</code></pre></div>
+<p><strong>Задача:</strong>  </p>
+<ol>
+<li>Найдите общее количество проданных единиц для каждого товара.</li>
+<li>Найдите товар с наибольшим количеством проданных единиц.</li>
+<li>Определите общее количество проданных товаров.</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
